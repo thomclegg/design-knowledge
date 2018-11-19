@@ -1,0 +1,18 @@
+@custom-media --mq-medium (max-width: 800px);
+
+@custom-media --mq-small (max-width: 550px);
+
+
+
+:root {
+  --primary-color: #f70201;
+  --text-on-light: #151620;
+  --text-on-dark: #ffffff;
+  --background-color: #ffffff;
+
+  --main-spacing: 64px;
+  --gap-spacing: 40px;
+  --hero-spacing: 240px;
+  --header-height: 80px;
+  --centered-width: 50%;
+}
