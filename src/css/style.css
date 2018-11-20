@@ -5,7 +5,7 @@
 
 
 :root {
-  --primary-color: #f70201;
+  --primary-color: #deb39b;
   --text-on-light: #151620;
   --text-on-dark: #ffffff;
   --background-color: #ffffff;
@@ -15,4 +15,8 @@
   --hero-spacing: 240px;
   --header-height: 80px;
   --centered-width: 50%;
+}
+
+body {
+  background-color: var(--primary-color);
 }
