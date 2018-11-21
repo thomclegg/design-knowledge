@@ -14,6 +14,8 @@ const randomTag = document.querySelector("footer img")
 //     getQuote()
 //   })
 
+
+
 const getQuote = function() {
 
   // if (data.length > 0) {
@@ -23,6 +25,7 @@ const getQuote = function() {
   //   quoteTag.innerHTML = randomQuote.quote
   //   authorTag.innerHTML = randomQuote.author
   // }
+
 
   fetch("https://api.superhi.com/api/test/quotes/random")
     .then(response => response.json())
@@ -35,8 +38,7 @@ const getQuote = function() {
         } else {
           quoteTag.classList.remove("long")
         }
-        const hue = Math.random * 360;
-        bodyTag.style.backgroundColor = `hsl(" + hue + ", 100%, 90%)`
+        bodyTag.style.backgroundColor = `hsl(0, 100%, 90%)`
     })
 }
 
