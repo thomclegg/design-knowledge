@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Bluu Next";
+  src: url(fonts/bluunext.woff2), url(fonts/bluunext.woff);
+  font-weight: 400;
+}
+
+
+
+h1 {
+  font-family: "Bluu Next";
+  font-size: 56px;
+  width: 600px;
+  line-height: 1.25;
+  text-indent: -0.4;
+}
+
+p {
+  font-family: "Bluu Next";
+  font-size: 24px;
+  width: 600px;
+}
+
+h1,
+p {
+  text-align: left;
+}
+
+h1.long {
+  font-size: 40px;
+}

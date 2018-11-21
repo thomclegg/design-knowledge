@@ -31,7 +31,7 @@ gulp.task("css", function() {
 
   .pipe(concat('style.css'))
 
-    .pipe(cleanCss({
+  .pipe(cleanCss({
       compatibility: 'ie8'
     })
   )
@@ -50,14 +50,20 @@ gulp.task("fonts", function() {
     .pipe(gulp.dest("dist/fonts"))
 })
 
+gulp.task("js", function() {
+  return gulp.src("src/js/*.js")
+    .pipe(gulp.dest("dist/js"))
+})
+
 gulp.task("images", function() {
   return gulp.src("src/img/*")
     .pipe(imagemin())
     .pipe(gulp.dest("dist/img"))
 })
 
+
 gulp.task("watch", function() {
-  browserSync.init({
+  browserSync.init(["js/*.js"], {
     server: {
       baseDir: "dist"
     }
@@ -69,6 +75,7 @@ gulp.task("watch", function() {
   gulp.watch("src/css/*", ["css"])
   gulp.watch("src/fonts/*", ["fonts"])
   gulp.watch("src/img/*", ["images"])
+  gulp.watch("src/js/*", ["js"])
 
 })
 
